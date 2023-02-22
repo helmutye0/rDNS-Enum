@@ -18,7 +18,7 @@ do
 			do
                 
 				host=""
-                ip=$cidr.$ip24.$interface
+                ip=$cidr.$ip16.$ip24.$interface
                 host=$(nslookup $ip | grep msufcu)
                 
                 if [ "$host" ]
