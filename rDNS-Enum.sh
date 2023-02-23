@@ -1,4 +1,5 @@
 #!/bin/bash
+## fill in the domain you are enumerating in the domain variable
 
 cidr=10
 ip16=0
