@@ -2,6 +2,7 @@
 
 cidr=10
 ip16=0
+domain=""
 
 while [ $ip16 -le 255 ]
 do
@@ -19,7 +20,7 @@ do
                 
 				host=""
                 ip=$cidr.$ip16.$ip24.$interface
-                host=$(nslookup $ip | grep msufcu)
+                host=$(nslookup $ip | grep $domain)
                 
                 if [ "$host" ]
                 then
